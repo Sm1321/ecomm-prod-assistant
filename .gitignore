@@ -9,3 +9,7 @@ wheels/
 # Virtual environments
 .venv
 epa_env
+
+
+#
+.env   
