@@ -17,7 +17,7 @@ class DataIngestion:
         Initialize environment variables, embedding model, and set CSV file path.
         """
         print("Initializing DataIngestion pipeline...")
-        self.model_loader=ModelLoader()
+        self.model_loader = ModelLoader()
         self._load_env_variables()
         self.csv_path = self._get_csv_path()
         self.product_data = self._load_csv()
@@ -104,11 +104,11 @@ class DataIngestion:
         """
         collection_name=self.config["astra_db"]["collection_name"]
         vstore = AstraDBVectorStore(
-            embedding= self.model_loader.load_embeddings(),
-            collection_name=collection_name,
-            api_endpoint=self.db_api_endpoint,
-            token=self.db_application_token,
-            namespace=self.db_keyspace,
+            embedding = self.model_loader.load_embeddings(),
+            collection_name = collection_name,
+            api_endpoint = self.db_api_endpoint,
+            token = self.db_application_token,
+            namespace = self.db_keyspace,
         )
 
         inserted_ids = vstore.add_documents(documents)
