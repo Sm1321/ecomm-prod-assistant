@@ -8,8 +8,24 @@ wheels/
 
 # Virtual environments
 .venv
-epa_env
+# Virtual environment
+env/
+epa_env/
 
+# IDE/editor settings
+.vscode/
+.idea/
 
-#
-.env   
+# Environment files
+.env
+*.env
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+archive/
+
+.vscode/
