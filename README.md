@@ -15,6 +15,6 @@
  - epa_env\Scripts\activate (Activate Env)
 
 
-4.`Run this file:-` python .\get_lib_version.py
+4. `Run this file:-` python .\get_lib_version.py
 
-5.
+5. This is Master Branch
