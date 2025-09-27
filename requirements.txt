@@ -20,5 +20,6 @@ ragas
 langchain-mcp-adapters
 mcp
 ddgs
+rags
 
 -e .
