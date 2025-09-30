@@ -15,6 +15,7 @@ from evaluation.ragas_eval import evaluate_context_precision, evaluate_response_
 from langchain_mcp_adapters.client import MultiServerMCPClient
 
 
+
 class AgenticRAG:
     """Agentic RAG pipeline using LangGraph + MCP (Retriever + WebSearch)."""
 

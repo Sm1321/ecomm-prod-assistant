@@ -44,6 +44,7 @@ class AgenticRAG:
             formatted_chunks.append(formatted)
         return "\n\n---\n\n".join(formatted_chunks)
 
+
     # ---------- Nodes ----------
     def _ai_assistant(self, state: AgentState):
         print("--- CALL ASSISTANT ---")
@@ -59,6 +60,7 @@ class AgenticRAG:
             chain = prompt | self.llm | StrOutputParser()
             response = chain.invoke({"question": last_message})
             return {"messages": [HumanMessage(content=response)]}
+
 
     def _vector_retriever(self, state: AgentState):
         
