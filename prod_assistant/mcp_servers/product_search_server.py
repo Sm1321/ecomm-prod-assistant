@@ -50,7 +50,7 @@ async def web_search(query: str) -> str:
     except Exception as e:
         return f"Error during web search: {str(e)}"
 
-
 # ---------- Run Server ----------
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    #mcp.run(transport="stdio")
+    mcp.run(transport="streamable-http")
